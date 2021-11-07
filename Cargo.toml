@@ -1,0 +1,25 @@
+[package]
+name = "amg88"
+version = "0.1.0"
+authors = ["Jacob Rosenthal"]
+keywords = ["temperature", "grideye"]
+categories = ["embedded", "no-std"]
+description = "A platform agnostic driver for the Panasonic Grid-EYE AMG88 infrared array sensor"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/jacobrosenthal/amg88-rs"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+embedded-hal = "0.2.4"
+
+[dev-dependencies]
+smart-leds = "0.3.0"
+cortex-m = "0.7.1"
+cortex-m-rt = "0.6.15"
+embedded-graphics = "0.6.2"
+ssd1331 = "0.2.3"
+stm32f4xx-hal = { version = "0.10.1", features = ["stm32f411", "rt"] }
+panic_rtt = "0.3.0"
+jlink_rtt = "0.2.0"
